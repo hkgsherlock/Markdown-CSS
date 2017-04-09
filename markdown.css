@@ -1,3 +1,5 @@
+/* original Markdown-CSS by simonlc/Markdown-CSS https://github.com/simonlc/Markdown-CSS */
+
 html {
   font-size: 100%;
   overflow-y: scroll;
@@ -132,9 +134,18 @@ code,
 kbd,
 samp {
   color: #000;
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
+  font-family: 'consolas', 'courier new', monospace;
+  _font-family: 'consolas', 'courier new', monospace;
   font-size: 0.98em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 0 .5em;
+}
+
+pre > code{
+  padding: 0;
 }
 
 pre {
